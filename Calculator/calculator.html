@@ -1,0 +1,43 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+<link href='calculator.css' rel='stylesheet' type='text/css'>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+<script src="calculator.js"></script>
+</head>
+<body>
+
+<div ng-app='calculator' ng-controller="controller">
+  <form novalidate class="simple-form">
+  <div id='calc'>
+    <h1>freeCodeCamp</h1>
+    <div id="display" >{{inputNumber}}</div>
+    <div id='inputs'>
+    <div id="top">
+      <input type="button" ng-click="reset()" value="C" id="clear"/>
+      <input type="button" ng-click='add()' value="+"/>
+      <input type="button" ng-click='subtract()' value= '-'/>
+      <input type="button" ng-click='divide()' value= '&divide'/>
+      <input type="button" ng-click='multiply()' value= 'x'/>
+      <input type="button" ng-click= 'decimal()' value= '.'/>
+      <input type="button" ng-click='seven()' value= '7'/>
+      <input type="button" ng-click='eight()' value= '8'/>
+      <input type="button" ng-click='nine()' value= '9'/>
+      <input type="button" ng-click='four()' value= '4'/>
+      <input type="button" ng-click='five()' value= '5'/>
+      <input type="button" ng-click='six()' value= '6'/>
+      <input type="button" ng-click='one()' value= '1'/>
+      <input type="button" ng-click='two()' value= '2'/>
+      <input type="button" ng-click='three()' value= '3'/>
+      <input type="button" ng-click='zero()' value= '0'/>
+      <input type="submit" ng-click="calculate()" value="=" id="submit"/>
+    
+  
+ 
+    </div>
+  </div>
+ </form>
+</body>
+</html>
+  

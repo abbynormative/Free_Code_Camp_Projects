@@ -1,0 +1,90 @@
+body{
+  background-color: #71685F;
+}
+h1{
+  font-family: 'Titillium Web', sans-serif;
+  margin: 10px;
+  color: #71685F;
+  text-align: center;
+  text-shadow: 1px #000000;
+  font-size: 30px;
+  font-weight: 300;
+}
+#calc{
+  width: 340px;
+  background-color: #CCD3D9;
+  margin: 40px auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-box-shadow: inset 0px -5px 15px rgba(0,0,0,0.75), 8px 15px 30px black;
+  -moz-box-shadow:    inset 0px -5px 15px rgba(0,0,0,0.75), 8px 15px 30px black;
+  box-shadow: inset 0px -5px 15px rgba(0,0,0,0.75), 8px 15px 30px black;
+  border: 1px solid rgba(0,0,0,0.75);
+  border-radius: 15px 15px 20px 20px;
+}
+#display{
+  width: 260px;
+  height: 20px;
+  background-color: #C8CEB6;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-shadow: inset -2px 5px 38px 3px #ABABAB;
+-webkit-box-shadow: inset -2px 5px 38px 3px #ABABAB;
+-moz-box-shadow: inset -2px 5px 38px 3px #ABABAB;
+-o-box-shadow: inset -2px 5px 38px 3px #ABABAB;
+  border-radius: 10px;
+  text-align: right;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #353519;
+}
+#inputs{
+  width: 280px;
+  margin: 0 auto;
+}
+#top{
+  margin-top: 10px;
+}
+input[type=button]{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 70px;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 1px 2px 2px #060608;
+-moz-box-shadow:    0px 1px 2px 2px #060608;
+box-shadow:         0px 1px 2px 2px #060608;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #3B4155;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  color: #EDEDEC;
+  font-size: 20px;
+}
+input[type=submit]{
+  width:162px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 1px 2px 2px #060608;
+-moz-box-shadow:    0px 1px 2px 2px #060608;
+box-shadow:         0px 1px 2px 2px #060608;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #3B4155;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  color: #EDEDEC;
+  font-size: 20px;
+}
+#clear{
+  background-color: #BA4343;
+}
