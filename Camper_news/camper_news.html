@@ -1,0 +1,40 @@
+<html>
+<head>
+<link href='camper_news.css' rel='stylesheet' type='text/css'>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-sanitize.js'></script>
+<script src='camper_news.js'></script>
+
+</head>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+  
+ <div ng-app="myApp" ng-controller="CamperStories">
+  <div id="top">
+    <h1>freeCodeCamp's <br/>Camper News</h1>
+    <h3>A news feed curated by freeCodeCamp students</h3>
+    
+    <label>Search <input ng-model='searchText'></label>
+          
+  </div>
+
+  <div id="display" ng-repeat = "details in details | orderBy:'-timePosted' | filter:searchText">
+  
+  <a href={{details.link}} + ' target="_blank">
+  
+    <p id="bind-html-with-sanitize"><span>{{details.timePosted | date:'MM-dd-yyyy'}}</span> 
+    
+    <div ng-bind-html= "details.headline.substring(0, 75)"></div> 
+  
+    <div class="favorites">&#10084; {{details.upVotes.length}}</div>
+  
+    </p>
+  </a>
+  
+  
+  </div>
+</div>
+</body>
+</html>
+
+  
