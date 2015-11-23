@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-sanitize.js'></script>
+<script src="wiki_viewer.js"></script>
+</head>
+</body>
+<div id = 'container'>
+  <div id= 'top'>
+  <h1>Wikipedia Viewer</h1>  
+<div ng-app="myApp" ng-controller="WikiViewer">
+   
+ <form novalidate>
+    <input type="textarea" ng-model="name">
+    
+    <input type="submit" ng-click="submitForm(name)" value="Search!">
+  </form>
+  
+  
+  <p>Click 'Search' to find Wikipedia articles related to {{name}}...</p>
+   
+     <div id='display' ng-repeat = "article in articles"> 
+     <a href='https://en.wikipedia.org/wiki/{{article.linktitle}}'+' target="_blank"'>
+     <ul>
+       <li id="bind-html-with-sanitize">
+       <div id ='title'>{{article.title}}:</div>
+       <div id ='snippet' ng-bind-html="article.snippet"> + "..."</div>
+       </li>
+     </ul>
+     
+       </div></a>
+  </div>
+</body>
+</html>
+  
