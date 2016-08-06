@@ -1,0 +1,34 @@
+$colwidth: 47%;
+$padding: 10px;
+$roboto: 'Roboto', sans-serif;
+
+div{
+  width: $colwidth;
+  display: inline;
+  font-family: $roboto;
+}
+h1{
+  font-family: $roboto;
+}
+textarea{
+  width: $colwidth;
+  height: auto;
+  float: left;
+  padding: $padding;
+}
+#right{
+  float: right;
+  padding: $padding;
+  padding-top: 0px;
+}
+
+@media(max-width: 770px) {
+  textarea{
+    float: none;
+  }
+  #right{
+    float: none;
+  background-color: none;
+    
+  }
+}
