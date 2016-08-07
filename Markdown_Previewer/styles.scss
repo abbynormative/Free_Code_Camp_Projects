@@ -1,14 +1,12 @@
 $colwidth: 47%;
 $padding: 10px;
-$roboto: 'Roboto', sans-serif;
-
+ 
+body{
+  font-family:'Roboto', sans-serif;
+}
 div{
   width: $colwidth;
   display: inline;
-  font-family: $roboto;
-}
-h1{
-  font-family: $roboto;
 }
 textarea{
   width: $colwidth;
@@ -18,6 +16,7 @@ textarea{
 }
 #right{
   float: right;
+  /*background-color: #ccffff; - see styles variable in JS and Message class*/
   padding: $padding;
   padding-top: 0px;
 }
@@ -28,7 +27,7 @@ textarea{
   }
   #right{
     float: none;
-  background-color: none;
+    background-color: none;
     
   }
 }

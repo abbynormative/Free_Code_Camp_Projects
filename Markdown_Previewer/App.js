@@ -3,13 +3,13 @@ var ReactDOM = require('react-dom');
 
 var styles = {
   background: 'lightblue',
-  color:      'darkred',
+  color: 'darkred',
 };
 
 var App = React.createClass({
   getInitialState: function() {
     this.state = {
-      inputText: 'Test Heading \n=====\n sub-heading\n-----\n#### Another heading\n\nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break  \n\nText attributes *italic*, **bold**, `monospace`, ~~strikethrough~~ .'
+      inputText: 'Test Heading \n=====\n sub-heading\n-----\n#### Another heading\n\nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break  \n\nText attributes *italic*, **bold**, `monospace`, ~~strikethrough~~ .\n\n[I\'m an inline-style link](https://www.google.com)'
     }
     return {message: this.state.inputText}
   },
@@ -37,7 +37,7 @@ var InputForm = React.createClass({
   render: function() {
     return (
       <div>
-        <textarea rows="22" onChange={this.handleInputChange}
+        <textarea rows="25" onChange={this.handleInputChange}
         defaultValue={this.props.message} />
       </div>
     );
